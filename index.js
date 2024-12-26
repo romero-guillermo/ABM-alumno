@@ -1,6 +1,9 @@
 const express = require("express")
 const app = express()
+const cors = require('cors');
 
+// Permitir solicitudes de todos los orígenes
+app.use(cors());
 
 
 const bodyParser = require('body-parser');
